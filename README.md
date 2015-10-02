@@ -13,11 +13,12 @@ A very basic example of Jmeter test plan based on (http://jmeter.apache.org/user
 
     sudo apt-get install ruby
     sudo gem install sinatra
-    gobuild api
 
 ### Go API requirements
 
     sudo apt-get install golang
+    cd jmeter_hello_world
+    gobuild api
 
 Based on (http://soryy.com/blog/2014/not-another-go-net-http-tutorial/)
 
@@ -29,17 +30,19 @@ If the size parameter is missing a random number of elements will be returned 0 
 
 1. Ruby api
 
-    ruby api.rb
+    `ruby api.rb`
 
 2. Go
 
-    ./api
+    `./api`
 
 To test your api is running, in another shell run
 
     curl localhost:8080/random?size=2
 
 ### Jmeter
+
+Start JMeter
 
     jmeter
 
